@@ -13,24 +13,28 @@ Creado en .Net 9.0 - Microsoft Visual Studio Community 2022 (64-bit)
      git clone https://github.com/AndrewBabativa/ToDoListApp.git
      ```
    - Deberías descargar el siguiente contenido:
+   - 
      ![image](https://github.com/user-attachments/assets/1c4f8bc7-5310-41ed-9471-5033eac5d259)
 
 2. **Tener Docker activo en la máquina de prueba**
 
 3. **Abrir un terminal e ir a la carpeta de descarga**
-   ![image](https://github.com/user-attachments/assets/c8b66585-c8cc-4318-9ad1-6f08d8aa9e23)
+4. 
+    - ![image](https://github.com/user-attachments/assets/c8b66585-c8cc-4318-9ad1-6f08d8aa9e23)
 
-4. **Ejecutar el comando para levantar los contenedores**  
+5. **Ejecutar el comando para levantar los contenedores**  
    - Comando:
      ```bash
      docker-compose up -d
      ```
    - Esto creará los contenedores necesarios. La configuración ya está incluida en el archivo `docker-compose.yml`. Debería aparecer algo como esto:
+   - 
      ![image](https://github.com/user-attachments/assets/8da5657a-472f-422b-915d-00546a4e941b)
 
-5. **Verificar los contenedores**
+6. **Verificar los contenedores**
    - Los dos contenedores están expuestos al host por los puertos **8080** y **8081**.
    - Las rutas de acceso quedan configuradas así:
+   - 
      - **API**: [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html)  
        _(Swagger se deja habilitado para fines de pruebas)_
 
@@ -136,7 +140,7 @@ El token de autenticación es necesario para consumir los demás servicios de la
 - Verifica que Docker esté corriendo y que los contenedores estén levantados antes de iniciar las pruebas.
 
 ---
-
+## **Documentación Técnica del Proyecto**
 #### **1. Resumen del Proyecto**
 El proyecto ToDoListApp es una aplicación web que permite a los usuarios gestionar sus tareas mediante la creación, actualización, eliminación y consulta de tareas. La aplicación sigue la arquitectura de CQRS (Command Query Responsibility Segregation) y usa MediatR para manejar las peticiones de manera eficiente. El sistema está dividido en capas para mantener un código limpio y escalable, utilizando ASP.NET Core para la API, Entity Framework Core para la persistencia de datos y JWT para la autenticación y autorización.
 
